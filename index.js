@@ -120,5 +120,5 @@ drawBallButton.addEventListener('click', function() {
 
 let messageAudio = document.getElementById("message");
 messageAudio.addEventListener('click', function() {
-  messageAudio.play();
+  new Audio("https://cdn.jsdelivr.net/gh/benongithub/secret-color-app@master/Message.m4a").play()
 });

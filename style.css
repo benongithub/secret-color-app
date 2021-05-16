@@ -169,13 +169,13 @@ input[type=number] {
 #message {
   position: absolute;
   top: 15px;
-  left: 680pt;
+  left: 600pt;
   display: block;
   width: 80px;
   height: 100px;
   border: 0px solid black;
 
-  background-image: url("https://cdn.jsdelivr.net/gh/benongithub/secret-color-app@master/ear.png");
+  /* background-image: url("https://cdn.jsdelivr.net/gh/benongithub/secret-color-app@master/ear.png");
   background-repeat: no-repeat;
-  background-size: 50pt;
+  background-size: 50pt;*/
 }
