@@ -1,3 +1,181 @@
-h1, h2 {
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+select:focus,
+textarea {
+  font-size: 16px;
+}
+
+h1,
+h2 {
   font-family: Lato;
+}
+
+img {
+  touch-action: manipulation;
+}
+
+#title {
+  margin-left: 20px;
+  display: block;
+  width:600pt;
+}
+
+#selectBalls {
+  width: 350pt;
+  height: 250pt;
+  border: 0px solid black;
+
+  /* margin: 0 auto;
+  margin-top: 20px;*/
+  position: absolute;
+  top: 120pt;
+  left: 40pt;
+}
+
+#selectBalls label {
+  display: block;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+  display: block;
+  font-size: 30pt;
+  width: 100pt;
+  border: 0;
+  text-align: center;
+}
+
+#foot {
+  display: block;
+  position: absolute;
+  top: 220pt;
+  left: 430pt;
+  z-index: 5;
+}
+
+#displayBalls {
+  width: 220pt;
+  height: 282pt;
+  border: 0px solid black;
+
+  /*margin: 0 auto;
+  margin-top: 20px;*/
+  position: absolute;
+  top: 110pt;
+  left: 510pt;
+
+  background-image: url('https://cdn.jsdelivr.net/gh/benongithub/secret-color-app@master/sack-transparent.png');
+  background-repeat: no-repeat;
+  background-size: 220pt;
+}
+
+#drawBalls {
+  width: 350pt;
+  height: 150pt;
+  border: 0px solid black;
+
+  position: absolute;
+  top: 330pt;
+  left: 40pt;
+}
+
+
+#drawBall {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+#drawnBall {
+  width: 40pt;
+  height: 40pt;
+  border: 0px solid black;
+
+  margin: 0 auto;
+  margin-top: 20px;
+  background-image: none;
+  background-repeat: no-repeat;
+  background-size: 40pt;
+}
+
+.spinAnimation {
+  animation-name: spin;
+  animation-duration: 2000ms;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(720deg);
+  }
+}
+
+#lessBlue, #moreBlue, #blueSelector {
+  position: absolute;
+  right: 10pt;
+}
+
+#moreBlue {
+  top: 0pt;
+}
+
+#blueSelector {
+  top: 80pt;
+  right: 18pt;
+}
+
+#redSelector {
+  margin-left: 17pt;
+}
+#lessRed {
+  margin-left: 10pt
+}
+
+.displayBall {
+  width: 40pt;
+  height: 40pt;
+
+  position: absolute;
+
+  background-image: none;
+  background-repeat: no-repeat;
+  background-size: 40pt;
+}
+
+#message {
+  position: absolute;
+  top: 15px;
+  left: 680pt;
+  display: block;
+  width: 80px;
+  height: 100px;
+  border: 0px solid black;
+
+  background-image: url("https://cdn.jsdelivr.net/gh/benongithub/secret-color-app@master/ear.png");
+  background-repeat: no-repeat;
+  background-size: 50pt;
 }

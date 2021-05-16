@@ -1,1 +1,32 @@
-<div id="app"></div>
+<div id="app">
+  <img id="title" src="https://cdn.jsdelivr.net/gh/benongithub/secret-color-app@master/title.png">
+  <audio id="message"><source src="https://cdn.jsdelivr.net/gh/benongithub/secret-color-app@master/Message.m4a" type="audio/mpeg">Your browser does not support the audio element.</audio> 
+  <h2>Deine Lösung: </h2>
+  <div id="selectBalls">
+    <img id="moreRed" src="https://cdn.jsdelivr.net/gh/benongithub/bingo-app-color@master/arrow_up_transparent.png">
+    <input style="color: red" id="redSelector" type="number" min="0" max="10" value=0>
+    <img  id="lessRed" src="https://cdn.jsdelivr.net/gh/benongithub/bingo-app-color@master/arrow_down_transparent.png">
+    <img id="moreBlue" src="https://cdn.jsdelivr.net/gh/benongithub/bingo-app-color@master/arrow_up_transparent.png">
+    <input style="color: blue" id="blueSelector" type="number" min="0" max="10" value=0>
+    <img id="lessBlue" src="https://cdn.jsdelivr.net/gh/benongithub/bingo-app-color@master/arrow_down_transparent.png">
+  </div>
+  
+  <div id="displayBalls">
+    <div class="displayBall" style="top: 100pt; left: 50pt"></div>
+    <div class="displayBall" style="top: 80pt; left: 150pt"></div>
+    <div class="displayBall" style="top: 30pt; left: 180pt"></div>
+    <div class="displayBall" style="top: 200pt; left: 70pt"></div>
+    <div class="displayBall" style="top: 220pt; left: 150pt"></div>
+    <div class="displayBall" style="top: 150pt; left: 200pt"></div>
+    <div class="displayBall" style="top: 50pt; left: 80pt"></div>
+    <div class="displayBall" style="top: 90pt; left: 220pt"></div>
+    <div class="displayBall" style="top: 150pt; left: 50pt"></div>
+    <div class="displayBall" style="top: 150pt; left: 140pt"></div>
+  </div>
+  <div id="drawBalls">
+    <div style="display: none" id="numRedBalls"></div>
+    <div style="display: none" id="numBlueBalls"></div>
+    <img id="drawBall" src="https://cdn.jsdelivr.net/gh/benongithub/bingo-app-color@master/start.PNG">
+    <div id="drawnBall"></div>
+  </div>
+</div>
