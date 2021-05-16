@@ -33,15 +33,17 @@ img {
 }
 
 #selectBalls {
-  width: 350pt;
+  width: 260pt;
   height: 250pt;
-  border: 0px solid black;
+  border: 4px solid black;
 
   /* margin: 0 auto;
   margin-top: 20px;*/
   position: absolute;
-  top: 120pt;
+  top: 140pt;
   left: 40pt;
+
+  border-radius: 20px;
 }
 
 #selectBalls label {
@@ -90,13 +92,13 @@ input[type=number] {
 }
 
 #drawBalls {
-  width: 350pt;
+  width: 150pt;
   height: 150pt;
   border: 0px solid black;
 
   position: absolute;
-  top: 330pt;
-  left: 40pt;
+  top: 170pt;
+  left: 340pt;
 }
 
 
@@ -104,6 +106,7 @@ input[type=number] {
   display: block;
   margin: 0 auto;
   margin-top: 20px;
+  width: 120pt;
 }
 
 #drawnBall {
@@ -134,25 +137,29 @@ input[type=number] {
   }
 }
 
+#moreBlue, #lessBlue, #moreRed, #lessRed {
+  width: 90pt;
+}
+
 #lessBlue, #moreBlue, #blueSelector {
   position: absolute;
-  right: 10pt;
+  right: 70pt;
 }
 
 #moreBlue {
-  top: 0pt;
+  top: 50pt;
 }
 
 #blueSelector {
-  top: 80pt;
-  right: 18pt;
+  top: 100pt;
+  right: 65pt;
 }
 
 #redSelector {
-  margin-left: 17pt;
+  margin-left: 0pt;
 }
 #lessRed {
-  margin-left: 10pt
+  margin-left: 5pt
 }
 
 .displayBall {
@@ -169,7 +176,7 @@ input[type=number] {
 #message {
   position: absolute;
   top: 15px;
-  left: 600pt;
+  left: 620pt;
   display: block;
   width: 80px;
   height: 100px;
@@ -178,4 +185,18 @@ input[type=number] {
   /* background-image: url("https://cdn.jsdelivr.net/gh/benongithub/secret-color-app@master/ear.png");
   background-repeat: no-repeat;
   background-size: 50pt;*/
+}
+
+#your-solution {
+  width: 180pt;
+  margin-top: 10px;
+}
+
+#check-solution {
+  width: 120pt;
+  position: absolute;
+  bottom: 10pt;
+  left: 50pt;
+  border: 2px solid black;
+  border-radius: 10px;
 }
