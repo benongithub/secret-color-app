@@ -123,17 +123,41 @@ input[type=number] {
 
 .spinAnimation {
   animation-name: spin;
-  animation-duration: 2000ms;
-  animation-iteration-count: 1;
+  animation-duration: 200ms;
+  animation-iteration-count: 10;
   animation-timing-function: linear;
 }
 
 @keyframes spin {
-  from {
-    transform: rotate(0deg);
+  /*from {
+    transform: translate(10px, 0px);
   }
   to {
-    transform: rotate(720deg);
+    transform: translate(-10px, 0px);
+  }*/
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  40% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+  60% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
   }
 }
 
@@ -143,7 +167,7 @@ input[type=number] {
 
 #lessBlue, #moreBlue, #blueSelector {
   position: absolute;
-  right: 70pt;
+  right: 50pt;
 }
 
 #moreBlue {
@@ -152,7 +176,7 @@ input[type=number] {
 
 #blueSelector {
   top: 100pt;
-  right: 65pt;
+  right: 45pt;
 }
 
 #redSelector {
@@ -195,7 +219,7 @@ input[type=number] {
 #check-solution {
   width: 120pt;
   position: absolute;
-  bottom: 10pt;
+  bottom: 5pt;
   left: 50pt;
   border: 2px solid black;
   border-radius: 10px;

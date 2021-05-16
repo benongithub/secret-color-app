@@ -82,7 +82,7 @@ drawBallButton.addEventListener('click', function() {
     displayBalls.classList.add('spinAnimation');
     setTimeout(function() {
       displayBalls.classList.remove('spinAnimation');
-      if (drawnNumber > 4) {
+      if (drawnNumber > 2) {
 
         drawnBallDisplay.style.backgroundImage =
           "url('https://cdn.jsdelivr.net/gh/benongithub/bingo-app-color@master/blue_ball_transparent.png')";
@@ -94,7 +94,27 @@ drawBallButton.addEventListener('click', function() {
   }
 });
 
+let checkSolutionButton = document.getElementById("check-solution");
+checkSolutionButton.addEventListener("click", function() {
+  document.getElementById("selectBalls").style.backgroundColor = "#ffffff";
+  setTimeout(function() {
+    if(redBalls == 2 && blueBalls == 6) {
+      document.getElementById("selectBalls").style.backgroundColor = "#00ff00";
+    } else {
+      document.getElementById("selectBalls").style.backgroundColor = "#ff0000";
+    }
+  }, 500);
+});
+
+let audioLock = false;
+
 let messageAudio = document.getElementById("message");
 messageAudio.addEventListener('click', function() {
-  new Audio("https://cdn.jsdelivr.net/gh/benongithub/secret-color-app@master/Message.m4a").play()
+  if(!audioLock) {
+    new Audio("https://cdn.jsdelivr.net/gh/benongithub/secret-color-app@master/Message-Alex.m4a").play()
+    audioLock = true;
+    setTimeout(function() {
+      audioLock = false;
+    }, 15000);
+  }
 });
