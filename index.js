@@ -90,7 +90,7 @@ drawBallButton.addEventListener('click', function() {
         drawnBallDisplay.style.backgroundImage =
           "url('https://cdn.jsdelivr.net/gh/benongithub/bingo-app-color@master/red_ball_transparent.png')";
       }
-    }, 2000);
+    }, 1000);
   }
 });
 
